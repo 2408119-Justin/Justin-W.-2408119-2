@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesIA2.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Savoria <span>Fusion</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Cart.html">Cart <span class="cart-badge" id="cartCount">0</span></a></li>
+                    <li><a href="Login.html" class="active">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Welcome Back</h2>
+            <form id="loginForm" novalidate>
+                <!-- Username Field -->
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter your username"
+                        required
+                        aria-describedby="usernameError"
+                    >
+                    <p class="error-message" id="usernameError">Please enter your username</p>
+                </div>
+
+                <!-- Password Field -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required
+                        aria-describedby="passwordError"
+                    >
+                    <p class="error-message" id="passwordError">Please enter your password</p>
+                </div>
+
+                <!-- Remember Me -->
+                <div class="form-group">
+                    <label style="display: flex; align-items: center; gap: 8px;">
+                        <input type="checkbox" id="remember" name="remember" style="width: auto;">
+                        Remember me
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+
+                <!-- Form Footer -->
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="register.html">Register here</a></p>
+                </div>
+            </form>
+
+            <!-- Success/Error Messages Container -->
+            <div id="loginMessage" class="mt-1"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Savoria Fusion. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#menu-section">Menu</a>
+                <a href="About.html">About</a>
+                <a href="Cart.html">Cart</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../Codes/script.js"></script>
+</body>
+</html>

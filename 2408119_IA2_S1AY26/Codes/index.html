@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesIA2.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Savoria <span>Fusion</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cart.html">Cart <span class="cart-badge" id="cartCount">0</span></a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class = "welcome-section">
+            <img src="../Assets/hero-restaurant.jpg" alt="Savoria Fusion restaurant interior" class="welcome-image">
+            <div class="welcome-content">
+                <h1>Welcome to Savoria Fusion</h1>
+                <p>Experience the perfect blend of global flavors and local ingredients, crafted with passion and served with elegance.</p>
+                <a href="index.html#menu-section" class="btn btn-secondary">View Our Menu</a>
+        </section>
+
+        <section id="menu-section">
+            <h2 class = "section-title">Our Menu</h2>
+            <div class = "menu-items">
+                <div class = "menu-item">
+                    <img src = "../Assets/food-1.jpg" alt="Fresh gourmet salad with seasonal vegetables">
+                    <div class = "menu-item-info">
+                        <h3>Garden Fresh Salad</h3>
+                        <p>Crisp seasonal vegetables with house-made vinaigrette</p>
+                        <p class="menu-item-price">$14.99</p>
+                        <button class="btn btn-primary" onclick = "addToCart('Garden Fresh Salad', 14.99, '../Assets/food-1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class = "menu-item">
+                    <img src = "../Assets/food-2.jpg" alt="Artisan pizza with fresh toppings">
+                    <div class = "menu-item-info">
+                        <h3>Artisan Pizza</h3>
+                        <p>Wood-fired pizza with premium imported ingredients</p>
+                        <p class="menu-item-price">$19.99</p>
+                        <button class="btn btn-primary" onclick = "addToCart('Artisan Pizza', 19.99, '../Assets/food-2.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class = "menu-item">
+                    <img src = "../Assets/food-3.jpg" alt="Grilled salmon with lemon butter sauce">
+                    <div class = "menu-item-info">
+                        <h3>Grilled Salmon</h3>
+                        <p>Fresh Atlantic salmon with a zesty lemon butter sauce</p>
+                        <p class="menu-item-price">$24.99</p>
+                        <button class="btn btn-primary" onclick = "addToCart('Grilled Salmon', 24.99, '../Assets/food-3.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class = "menu-item">
+                    <img src = "../Assets/food-4.jpg" alt="Decadent chocolate lava cake dessert">
+                    <div class = "menu-item-info">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Warm chocolate cake with a gooey molten center</p>
+                        <p class="menu-item-price">$9.99</p>
+                        <button class="btn btn-primary" onclick = "addToCart('Chocolate Lava Cake', 9.99, '../Assets/food-4.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class = "menu-item">
+                    <img src = "../Assets/food-5.jpg" alt="Refreshing tropical fruit smoothie">
+                    <div class = "menu-item-info">
+                        <h3>Tropical Smoothie</h3>
+                        <p>Blend of fresh tropical fruits and coconut water</p>
+                        <p class="menu-item-price">$6.99</p>
+                        <button class="btn btn-primary" onclick = "addToCart('Tropical Smoothie', 6.99, '../Assets/food-5.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class = "menu-item">
+                    <img src = "../Assets/food-6.jpg" alt="Hearty vegetable soup with fresh herbs">
+                    <div class = "menu-item-info">
+                        <h3>Hearty Vegetable Soup</h3>
+                        <p>Seasonal vegetables simmered in a flavorful broth</p>
+                        <p class="menu-item-price">$11.99</p>
+                        <button class="btn btn-primary" onclick = "addToCart('Hearty Vegetable Soup', 11.99, '../Assets/food-6.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-about">
+            <h2 class="section-title">Why Choose Savoria?</h2>
+            <div class="about-container">
+                <div class="about-content">
+                    <h3>Our Story</h3>
+                    <p>At Savoria Fusion, we believe that great food brings people together. Our chefs combine traditional techniques with modern innovation to create unforgettable dining experiences.</p>
+                    <p>Every dish tells a story of passion, creativity, and the finest ingredients sourced from local farmers and global markets.</p>
+                    <a href="about.html" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="../Assets/food-7.jpg" alt="Beautifully plated gourmet dish">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Savoria Fusion. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#menu-section">Menu</a>
+                <a href="about.html">About</a>
+                <a href="cart.html">Cart</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../Codes/script.js"></script>
+</body>
+</html>
